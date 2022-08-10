@@ -16,4 +16,4 @@ Follow the link listed below to access, the Workday Scheduler. An example image 
 # Installation
 [websitelink](https://rgonsahn.github.io/Workday-Scheduler/Develop/)
 
-![work_scheduler](Workday-Scheduler/Images/work_scheduler.jpg)
+![work_scheduler](Images/work_scheduler.jpg)
