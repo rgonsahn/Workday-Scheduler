@@ -3,30 +3,22 @@ function timeUpdate(){
     $("#currentDay").text(todayNow.format("dddd, MMMM Do YYYY, h:mm.ss"));
 
 }
-
+// Calls the timeUpdate function for the current day, date , and time to be updated in the header
 timeUpdate();
 
 
-
-
-//if statement within timeBlock 
-//if time block = current hr set bg to color
-//make a new for loop for color 
-//or make a var for each text area and time block and separate if statement
-
-//else statement goes here
-
+// Saves the information typed in text area to local storage at that specific time
 $(".saveBtn").on("click", function () {
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     localStorage.setItem(time, text);
 })
-
+// tracks the current hour
 function timeCounter(){
 var timeNow =moment().hour();
 
 
-
+// color codes the scheduler depending on time, present, past, or future
 $(".time-block").each(function () {
     var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
